@@ -70,6 +70,7 @@
   .card-options{
     top: 95px;
     right: 15px;
+    padding: 0px 10px;
   }
   .card-details p{
     text-align: left;
@@ -469,7 +470,7 @@
       .rescan-card,.add-card{
         background: #122052;
         font-size: 13px;
-        border-radius: 10px;
+        border-radius: 5px;
       }
      
     /* end create manually */
