@@ -13,7 +13,7 @@
     color: #122052;
   }
   /* bootom modal */
-  .modal.fade:not(.in).bottom .modal-dialog {
+  /* .modal.fade:not(.in).bottom .modal-dialog {
     -webkit-transform: translate3d(0, 125%, 0);
     transform: translate3d(0, 285%, 0);
   }
@@ -34,12 +34,13 @@
     height: 3px;
     background: #122052;
     border-radius: 10px;
-  }
+  } */
+
+  /*End bootom modal */
   .dropstart ul.dropdown-menu li:hover{
     background: #122052;
     color: white;
   }
-  /*End bootom modal */
   a{
     text-decoration: none !important;
   }
