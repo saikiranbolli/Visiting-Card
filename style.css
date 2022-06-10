@@ -362,6 +362,11 @@
         max-width: 205px;
         margin: 30px auto 0px;
       }
+      .img-upload {
+        position: relative;
+        max-width: 205px;
+        /* margin: 30px auto 0px; */
+      }
       .avatar-upload .avatar-edit {
         position: absolute;
         /* right: 30px; */
@@ -369,10 +374,10 @@
         z-index: 1;
         top: 86px;
       }
-      .avatar-upload .avatar-edit input {
+       .avatar-edit input {
         display: none;
       }
-      .avatar-upload .avatar-edit input + label {
+       .avatar-edit input + label {
         display: inline-block;
         width: 34px;
         height: 34px;
@@ -385,11 +390,11 @@
         font-weight: normal;
         transition: all 0.2s ease-in-out;
       }
-      .avatar-upload .avatar-edit input + label:hover {
+       .avatar-edit input + label:hover {
         background: #f1f1f1;
         border-color: #d6d6d6;
       }
-      .avatar-upload .avatar-edit input + label:after {
+       .avatar-edit input + label:after {
         content: "\f040";
         font-family: 'FontAwesome';
         color: #122052;
@@ -400,13 +405,13 @@
         text-align: center;
         margin: auto;
       }
-      .avatar-upload .avatar-preview {
+       .avatar-preview {
         width: 150px;
         height: 150px;
         position: relative;
         margin: auto;
       }
-      .avatar-upload .avatar-preview > div {
+       .avatar-preview > div {
         /* width: 80%; */
         height: 80%;
         margin: auto;
