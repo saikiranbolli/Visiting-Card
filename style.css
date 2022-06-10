@@ -360,13 +360,13 @@
       /* create manually */
       .avatar-upload {
         position: relative;
-        /* max-width: 205px;
-        margin: 30px auto 0px; */
+        max-width: 205px;
+        margin: 30px auto 0px;
       }
       .avatar-upload .avatar-edit {
         position: absolute;
         /* right: 30px; */
-        left: 229px;
+        left: 144px;
         z-index: 1;
         top: 86px;
       }
