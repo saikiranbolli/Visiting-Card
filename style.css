@@ -12,30 +12,6 @@
     font-weight: 600;
     color: #122052;
   }
-  /* bootom modal */
-  /* .modal.fade:not(.in).bottom .modal-dialog {
-    -webkit-transform: translate3d(0, 125%, 0);
-    transform: translate3d(0, 285%, 0);
-  }
-  .modal-bottom.modal-dialog {
-    margin: 0rem !important;
-    background: #fff;
-  }
-  .modal-bottom.modal-content{
-    display: contents !important;
-  }
-  .bottom-modal{
-    font-size: 14px;
-  }
-  .dash{
-    width: 100%;
-    max-width: 10%;
-    margin: auto;
-    height: 3px;
-    background: #122052;
-    border-radius: 10px;
-  } */
-
   /*End bootom modal */
   .dropstart ul.dropdown-menu li:hover{
     background: #122052;
@@ -161,6 +137,7 @@
       .section-center {
         width: 70vw;
         max-width: 1170px;
+        margin: auto;
         min-width: 340px;
       }
       .text-blue{
@@ -184,10 +161,10 @@
       .tabs-content {
         position: absolute;
         width: 100%;
-        max-width: 95%;
+        max-width: 90%;
         height: 110px;
         margin-top: 30px;
-        margin-left: 9px;
+        /* margin-left: 9px; */
         border-radius: 10px;
       }
       /* hide content */
@@ -207,7 +184,7 @@
       }
       .offcanav-header{
         background: #122052;
-        padding: 2px 0px;
+        padding: 17px 0px;
       }
       nav ul.ul-items {
         list-style-type: none;
@@ -271,7 +248,7 @@
         height: 30px;
         display: flex !important;
         align-items: center;
-        justify-content: right;
+        /* justify-content: right; */
         cursor: pointer;
         transition: 0.3s ease;
       }
@@ -389,7 +366,7 @@
       .avatar-upload .avatar-edit {
         position: absolute;
         /* right: 30px; */
-        left: 116px;
+        left: 229px;
         z-index: 1;
         top: 86px;
       }
@@ -428,6 +405,7 @@
         width: 150px;
         height: 150px;
         position: relative;
+        margin: auto;
       }
       .avatar-upload .avatar-preview > div {
         /* width: 80%; */
@@ -473,7 +451,6 @@
         font-size: 13px;
         border-radius: 5px;
       }
-     
     /* end create manually */
-        
+    /* scanned-card */
 }
