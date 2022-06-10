@@ -159,10 +159,10 @@
           font-size: 20px;
       }
       .tabs-content {
-        position: absolute;
+        /* position: absolute;
         width: 100%;
         max-width: 90%;
-        height: 110px;
+        height: 110px; */
         margin: 30px auto 0px;
         border-radius: 10px;
       }
