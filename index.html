@@ -132,7 +132,12 @@
                 </div>
                 <div class="mb-5 scan-img">
                     <!-- <a href="scanned-card.html" class="scan-btn">Scan Card</a> -->
-                            <input type="file" accept="image/*" capture value="scan">
+                            <!-- <input type="file" accept="image/*" capture value="scan"> -->
+                            <div class="file-input">
+                                <input type="file" name="file-input" id="file-input"class="file-input__input" accept="image/*" capture/>
+                                <label class="file-input__label" for="file-input" >
+                                  <span>Scan</span></label>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -181,7 +186,6 @@
         searchBtn.addEventListener("click", function() {
             searchBox.classList.toggle("active");
         })
-
         $('.btn-bottom').click(function() {
         $('.modal')
             .prop('class', 'modal fade') // revert to default
