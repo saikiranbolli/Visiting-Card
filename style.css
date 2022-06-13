@@ -104,7 +104,7 @@
       }
       .wrapper {
         height: auto;
-        min-height: 75vh;
+        min-height: 120vh;
         display: flex;
       }
       .profile-card {
@@ -112,16 +112,19 @@
         max-height: 340px;
         box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
         background: #122052;
-        border-bottom-left-radius: 130px;
-        border-bottom-right-radius: 130px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
         max-width: 700px;
         /* position: relative; */
+      }
+      .tabs-content .card{
+        position: inherit !important;
       }
      .profile-card__overlay {
         opacity: 1;
         pointer-events: auto;
         transition-delay: 0.1s;
-      }
+      } 
       .profile-card__cnt {
         text-align: center;
         padding: 20px 20px;
@@ -136,11 +139,16 @@
       }
       /* tabs */
       .section-center {
-        width: 70vw;
+        width: 95vw;
         max-width: 1170px;
         margin: auto;
         min-width: 340px;
       }
+      .tabs .items {
+        background: #fff;
+        padding: 14px 34px 10px 34px;
+        border-radius: 13px;
+    }
       .text-blue{
           color:#122052;
           font-weight: 500;
@@ -158,14 +166,6 @@
       }
       .btn-container i{
           font-size: 20px;
-      }
-      .tabs-content {
-        /* position: absolute;
-        width: 100%;
-        max-width: 90%;
-        height: 110px; */
-        /* margin: 30px auto 0px;
-        border-radius: 10px; */
       }
       /* hide content */
       .content {
@@ -443,10 +443,12 @@
         border-radius: 6px;
       }
       .add_group{
-        position: absolute;
+        position: sticky;
         padding: 10px 14px;
         bottom: 30px;
         right: 20px;
+        margin: 0 320px auto;
+        width: 12%;
         background: #122052;
         color: #fff;
         border-radius: 22px;
