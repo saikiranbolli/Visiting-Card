@@ -444,14 +444,14 @@
       }
       .add_group{
         position: sticky;
-        padding: 10px 14px;
-        bottom: 30px;
-        right: 20px;
-        margin: 0 320px auto;
-        width: 12%;
-        background: #122052;
-        color: #fff;
-        border-radius: 22px;
+    padding: 7px 10px;
+    bottom: 30px;
+    right: 20px;
+    margin: 0 320px auto;
+    width: 10%;
+    background: #122052;
+    color: #fff;
+    border-radius: 22px;
       }
       .rescan-card,.add-card{
         background: #122052;
