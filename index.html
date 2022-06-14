@@ -186,13 +186,8 @@
         let searchBox = document.querySelector(".panel-searchbox");
         searchBtn.addEventListener("click", function() {
             searchBox.classList.toggle("active");
+            $('.panel-searchbox input').val('');
         })
-        $('.btn-bottom').click(function() {
-        $('.modal')
-            .prop('class', 'modal fade') // revert to default
-            .addClass( $(this).data('direction') );
-        $('.modal').modal('show');
-        });
     </script>
 </body>
 </html>
