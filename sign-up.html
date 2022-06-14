@@ -72,8 +72,10 @@
             var input = $($(this).attr("toggle"));
             if (input.attr("type") == "password") {
             input.attr("type", "text");
+            $(this).addClass('fa-eye').removeClass('fa-eye-slash');
             } else {
             input.attr("type", "password");
+            $(this).addClass('fa-eye-slash').removeClass('fa-eye');
             }
         });
         $(".toggle-confirm-password").click(function() {
@@ -82,8 +84,10 @@
             var input = $($(this).attr("toggle"));
             if (input.attr("type") == "password") {
             input.attr("type", "text");
+            $(this).addClass('fa-eye').removeClass('fa-eye-slash');
             } else {
             input.attr("type", "password");
+            $(this).addClass('fa-eye-slash').removeClass('fa-eye');
             }
         });
     </script>

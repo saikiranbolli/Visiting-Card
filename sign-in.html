@@ -54,12 +54,13 @@
     <script>
         $(".toggle-password").click(function() {
             $(this).toggleClass("fa-eye");
-            $(this).removeClass("fa-eye-slash").addClass('fa-eye')
             var input = $($(this).attr("toggle"));
-            if (input.attr("type") == "password") {
+            if (input.attr("type") == "password") {  
             input.attr("type", "text");
+            $(this).addClass('fa-eye').removeClass('fa-eye-slash');
             } else {
             input.attr("type", "password");
+            $(this).addClass('fa-eye-slash').removeClass('fa-eye');
             }
         });
     </script>
