@@ -481,7 +481,8 @@
     /* scanned-card */
     /* sign-up form */
     .sign_up .form-control:focus{
-      border-color: #122052 !important;
+      border-color: #122052 !important; 
+      background: #d7d3d3;
     }
     .sign_up .form-control{
       background: #d7d3d3;
@@ -492,8 +493,12 @@
       position: relative;
       right: 10px;
       font-size: 14px;
+      color: #122052;
     }
-    .forget_password{
+    .signup-text{
+      color: #122052;
+    }
+    .signin-text{
       color: #122052;
     }
     .submit-sign{
@@ -502,5 +507,8 @@
       border: none;
       border-radius: 6px;
       padding: 4px 0px;
+    }
+    .sign-in{  
+      color: #ffc107;
     }
 }
