@@ -480,4 +480,28 @@
       }
     /* end create manually */
     /* scanned-card */
+    /* sign-up form */
+    .sign_up .form-control:focus{
+      border-color: #122052 !important;
+    }
+    .sign_up .form-control{
+      background: #f0ecec;
+    }
+    .field-icon {
+      float: right;
+      margin-top: -25px;
+      position: relative;
+      right: 10px;
+      font-size: 14px;
+    }
+    .forget_password{
+      color: #122052;
+    }
+    .submit-sign{
+      background: #122052;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 0px;
+    }
 }
