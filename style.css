@@ -26,7 +26,7 @@
     top: 0px;
   }
   .bottom_nav{
-    position: absolute;
+    position: sticky;
     width: 100%;
     bottom: 0px;
   }
@@ -510,5 +510,56 @@
     }
     .sign-in{  
       color: #ffc107;
+    }
+    /* about page */
+    .about__body .about__head p{
+      color: #122052;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .about__footer{
+      background: #122052;
+    }
+    /* end about */
+    /* settings */
+    .setting_information{
+      list-style: none;
+    }
+    .tick {
+      position: relative;
+      display: inline-block;
+      width: 19px;
+      height: 18px;
+      border-radius: 20px;
+      background: gray;
+    }
+    .tick:before, .tick:after {
+      background: white;
+      position: absolute;
+      content: " ";
+      left: 30%;
+      right: 30%;
+      top: 50%;
+      height: 2px;
+      bottom: auto;
+    }
+    .tick-success {
+      background:#122052;
+      transform: rotate(45deg);
+    }
+    .tick-success:after {
+      height: 2px;
+      bottom: 25%;
+      left: 30%;
+      right: 45%;
+      top: auto;
+    }
+    .tick-success:before {
+      width: 2px;
+      height: auto;
+      bottom: 25%;
+      top: 20%;
+      left: 55%;
+      right: auto;
     }
 }
