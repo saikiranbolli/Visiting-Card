@@ -82,7 +82,6 @@
     }
     .dropstart .dropdown-toggle::before {
         content: none !important;
-        height: auto !important;
     }
     .btn-secondary:focus{
         box-shadow: none!important;
@@ -177,13 +176,6 @@
         display: block;
       }
       /* offcanvas */
-      .uk-offcanvas-bar {
-        background: #fff !important;
-        padding: 0 !important;
-      }
-      .uk-offcanvas-overlay::before {
-        background: rgb(0 0 0 / 53%) !important;
-    }
       .icon-color{
         color: #122052;
       }
