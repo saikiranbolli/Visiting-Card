@@ -530,6 +530,7 @@
       display: inline-block;
       width: 19px;
       height: 18px;
+      top: 3px;
       border-radius: 20px;
       background: gray;
     }
