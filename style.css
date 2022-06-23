@@ -29,6 +29,7 @@
     position: sticky;
     width: 100%;
     bottom: 0px;
+    z-index: -1;
   }
   .logo{
     padding: 5px 10px;
@@ -54,7 +55,7 @@
     text-align: left;
   }
   .body-card{
-    padding: 168px 0px;
+    padding: 203px 0px;
   }
   .body-content_card i{
     width: 100%;
@@ -293,7 +294,7 @@
       }
       .panel-search .panel-searchbox {
         position: absolute;
-        top: 77%;
+        top: 68%;
         left: 60%;
         z-index: 1;
         transform: translate(-108%, -260%);
@@ -562,5 +563,34 @@
       top: 20%;
       left: 55%;
       right: auto;
+    }
+
+
+
+    a.menu-link {
+      float: left;
+      padding: 15.2px;
+    }
+    
+    nav#menu {
+      background: #fff;
+      z-index: 100000000000000;
+     
+    }
+    
+    .site-overlay {
+        display: none;
+    }
+    .menu-open .site-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9998;
+        background-color: rgb(0 0 0 / 58%);
+        -webkit-animation: fade 500ms;
+        animation: fade 500ms;
     }
 }

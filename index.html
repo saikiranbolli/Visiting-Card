@@ -12,12 +12,12 @@
 <body>
     <div>
         <!-- Header-nav -->
-        <div class="py-3 text-white nav_header ">
+        <div class="py-2 text-white nav_header ">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="offcanvas-menu">
+                <div class="offcanvas-menu d-none">
                     <input type="checkbox" id="toogle-menu" />
                     <label for="toogle-menu" class="toogle-open"><i class="fa-solid fa-bars"></i></label>
-                    <nav class="shadow">
+                    <nav class="">
                         <div>
                             <!-- offcanvas-header -->
                             <div class="offcanav-header d-flex justify-content-between">
@@ -107,6 +107,96 @@
                         </div>
                     </nav>
                 </div>
+                <div>
+                <div class="site-overlay"></div>
+                <a href="#menu" class="menu-link text-white "><i class="fa-solid fa-bars"></i></a>
+                    <nav id="menu" class="panel" role="navigation">
+                        <div>
+                            <!-- offcanvas-header -->
+                            <div class="offcanav-header">
+                                <div>
+                                    <p class="logo mb-0 h4 text-white">Comapny Name</p>
+                                </div>
+                            </div>
+                            <!-- end offcanvas-header -->
+                            <!-- offcanvas-body -->
+                            <div class="offcanav-body">
+                                <ul class="border-bottom ul-items p-0">
+                                    <a href="#">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-cart-shopping icon-color"></i></div>
+                                            <div><span class=" ms-3">Price & Plan</span></div>
+                                        </li>
+                                    </a>
+                                    <a href="sign-in.html">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-user-plus icon-color"></i></div>
+                                            <div><span class=" ms-3">Sign In</span></div>
+                                        </li>
+                                    </a>
+                                    <a href="sign-up.html">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-right-to-bracket icon-color"></i></div>
+                                            <div><span class=" ms-3">Sign Up</span></div>
+                                        </li>
+                                    </a>
+                                    <!-- <a href="#">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-qrcode icon-color"></i></div>
+                                            <div><span class=" ms-3">Scan History</span></div>
+                                        </li>
+                                    </a> -->
+                                    <a href="about.html">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-qrcode icon-color"></i></div>
+                                            <div><span class=" ms-3">About Us</span></div>
+                                        </li>
+                                    </a>
+                                    <a href="settings.html">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-gear icon-color"></i></div>
+                                            <div><span class=" ms-3">Settings</span></div>
+                                        </li>
+                                    </a>
+                                </ul>
+                                <ul class="ul-items p-0 pt-1 d-none">
+                                    <a href="#">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-share-nodes icon-color"></i></div>
+                                            <div><span class=" ms-3">Share</span></div>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-face-smile icon-color"></i></div>
+                                            <div><span class=" ms-3">Rate Us</span></div>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-brands fa-google-play icon-color"></i></div>
+                                            <div><span class=" ms-3">Our Other apps</span></div>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-comment-dots icon-color"></i></div>
+                                            <div><span class=" ms-3">Give Feedback</span></div>
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="p-2 d-flex align-items-center">
+                                            <div><i class="fa-solid fa-shield-halved icon-color"></i></div>
+                                            <div><span class=" ms-3">Privacy Policy</span></div>
+                                        </li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                            <!-- end offcanvas-body -->
+                        </div>
+                    </nav>
+            </div>
                 <div class="toogle-item d-flex justify-content-between">
                     <div class="panel-search">
                         <div class="panel-searchbox">
@@ -198,7 +288,6 @@
                   </div>
                   <p class='label mb-0'>Favourites</p>
                 </a>
-          
               </div>
             </div>
         </div>
@@ -207,7 +296,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="./tabs.js"></script>
     <script>
+        $('.menu-link').bigSlide({
+            easyClose: true
+        });
+        $('.menu-link').bigSlide({
+            menu: '#off-canvas-menu',
+            menuWidth: '270px',
+            easyClose: true,
+            afterOpen: function(){
+                $('body').addClass('menu-open');
+            },
+            afterClose: function(){
+            $('body').removeClass('menu-open');
+            }
+        });
+
+
+
         let searchBtn = document.querySelector(".panel-searchicon");
         let searchBox = document.querySelector(".panel-searchbox");
         searchBtn.addEventListener("click", function() {
