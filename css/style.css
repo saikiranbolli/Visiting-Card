@@ -82,6 +82,7 @@
     }
     .dropstart .dropdown-toggle::before {
         content: none !important;
+        height: auto !important;
     }
     .btn-secondary:focus{
         box-shadow: none!important;
