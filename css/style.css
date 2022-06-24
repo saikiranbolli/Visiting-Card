@@ -511,7 +511,7 @@
       font-weight: 600;
     }
     .about__footer{
-      position: fixed;
+      /* position: fixed; */
       bottom: 0;
       background: #122052;
     }
