@@ -29,6 +29,7 @@
     position: fixed;
     width: 100%;
     bottom: 0px;
+    z-index: -1;
   }
   .logo{
     padding: 5px 10px;
@@ -95,7 +96,7 @@
       }
       .detail-card-img{
         width: 100%;
-        padding: 10px;
+        padding: 34px 10px 10px;
         background-color: #645e5eab;
       }
       .detail-card-img img{
@@ -510,6 +511,8 @@
       font-weight: 600;
     }
     .about__footer{
+      position: fixed;
+      bottom: 0;
       background: #122052;
     }
     /* end about */
@@ -555,4 +558,5 @@
       left: 55%;
       right: auto;
     }
+    
 }
