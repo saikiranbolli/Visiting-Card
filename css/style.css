@@ -658,47 +658,30 @@
     right: auto;
   }
   .tick1 {
-    position: relative;
     display: inline-block;
     width: 19px;
     height: 18px;
-    top: 0px;
-    border-radius: 20px;
-    /* background: gray; */
   }
-
   .tick1:before,
   .tick1:after {
     background: white;
     position: absolute;
     content: " ";
-    left: 30%;
-    right: 30%;
-    top: 50%;
-    height: 2px;
-    bottom: auto;
   }
-
   .tick1-success {
-    /* background: #122052; */
     transform: rotate(45deg);
   }
-
   .tick1-success:after {
     height: 2px;
     bottom: 25%;
     left: 30%;
     right: 45%;
-    top: auto;
   }
-
   .tick1-success:before {
     width: 2px;
-    height: auto;
     bottom: 25%;
     top: 20%;
     left: 55%;
-    right: auto;
   }
   .pricing-body .plan__head p {
     color: #122052;
@@ -720,10 +703,7 @@
   .plan_price i{
     font-size: 15px;
   }
-  .plan_cards .card:hover{
-    border:1px solid #122052;
-    background: #f0ecfc;
-  }
+  
   .plan_circle{
     width: 20px;
     height: 20px;
@@ -736,4 +716,58 @@
   .plan_cards .card:hover .plan_circle{
    background: #122052;
   }
+  .plan_cards .card:hover{
+    border:1px solid #122052;
+    background: #f0ecfc;
+  }
+  .plan-context p{
+    color: #122052;
+    font-size: 14px;
+  }
+  .tick2 {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    top: 3px;
+  }
+
+  .tick2:before,
+  .tick2:after {
+    background: #122052;
+    position: absolute;
+    content: " ";
+    left: 30%;
+    right: 30%;
+    top: 50%;
+    height: 2px;
+    bottom: auto;
+  }
+
+  .tick2-success {
+    transform: rotate(45deg);
+  }
+
+  .tick2-success:after {
+    bottom: 25%;
+    right: 45%;
+    top: auto;
+  }
+
+  .tick2-success:before {
+    width: 2px;
+    height: auto;
+    bottom: 25%;
+    top: 20%;
+    left: 55%;
+  }
+  .subscribe-submit {
+    background: #122052;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    max-width: 87%;
+  }
+ 
 }
