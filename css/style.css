@@ -439,8 +439,8 @@
       .add_group{
         position: fixed;
         padding: 8px 12px 6px 12px;
-        bottom: 10px;
-        right: 12px;
+        bottom: 30px;
+        right: 25px;
         background: #122052;
         color: #fff;
         border-radius: 22px;
