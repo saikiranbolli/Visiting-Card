@@ -662,7 +662,7 @@
     display: inline-block;
     width: 19px;
     height: 18px;
-    top: -1px;
+    top: 2px;
     border-radius: 20px;
     /* background: gray; */
   }
