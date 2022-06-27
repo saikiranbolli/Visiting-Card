@@ -1,4 +1,4 @@
-@media (max-width:576px) {
+
   body {
     display: block;
     margin: 0px;
@@ -67,7 +67,7 @@
   }
 
   .body-card {
-    padding: 203px 0px 0px;
+    padding: 190px 0px 0px;
   }
 
   .body-content_card i {
@@ -777,7 +777,7 @@
     width: 100%;
     max-width: 87%;
   }
-}
+
 .bottom-nav-space{
   height: 130px;
 }
