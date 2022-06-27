@@ -719,9 +719,13 @@
   .plan_cards .card:hover .plan_circle{
    background: #122052;
   }
+  .plan_cards .card:hover .plan-head, .plan_cards .card:hover .plan_price, .plan_cards .card:hover .plan_sub_text, .plan_cards .card:hover .plan_price_text{
+    color:#fff;
+  }
   .plan_cards .card:hover{
     border:1px solid #122052;
     /* background: #f0ecfc; */
+    background: #122052;
     box-shadow: 0px 0px 5px -1px grey;
   }
   .plan-context p{
