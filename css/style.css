@@ -721,7 +721,7 @@
   }
   .plan_cards .card:hover{
     border:1px solid #122052;
-    background: #f0ecfc;
+    /* background: #f0ecfc; */
     box-shadow: 0px 0px 5px -1px grey;
   }
   .plan-context p{
@@ -773,5 +773,4 @@
     width: 100%;
     max-width: 87%;
   }
- 
 }
